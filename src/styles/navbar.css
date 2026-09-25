@@ -1,0 +1,117 @@
+.navbar {
+
+    width: 100%;
+
+    padding: 20px 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background:
+        linear-gradient(135deg,
+            #1e3a8a,
+            #2563eb,
+            #7c3aed);
+
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 35px rgba(37, 99, 235, .25);
+
+}
+
+
+.brand h2 {
+
+    color: white;
+
+    font-size: 30px;
+
+    margin: 0;
+
+}
+
+
+.brand p {
+
+    color: #dbeafe;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+
+}
+
+
+
+.nav-actions {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+
+.nav-actions button {
+
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+
+.profile-nav-btn {
+
+    background: #0f172a;
+
+}
+
+
+
+.logout-nav-btn {
+
+    background: #ef4444;
+
+}
+
+
+
+.nav-actions button:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+
+@media(max-width:600px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+
+    }
+
+}
