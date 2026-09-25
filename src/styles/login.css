@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+.login-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(135deg,
+            #eef2ff,
+            #dbeafe,
+            #c7d2fe);
+
+}
+
+
+/* Login Glass Card */
+
+.login-card {
+
+    width: 430px;
+
+    padding: 40px;
+
+    background:
+        rgba(255, 255, 255, 0.85);
+
+    backdrop-filter: blur(20px);
+
+    border-radius: 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    box-shadow:
+        0 25px 50px rgba(15, 23, 42, 0.15);
+
+    animation: fadeIn .7s ease;
+
+}
+
+
+/* Title */
+
+.login-card h2 {
+
+    text-align: center;
+
+    color: #1e293b;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+}
+
+
+.login-card p {
+
+    text-align: center;
+
+    color: #64748b;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* Inputs */
+
+.form-group {
+
+    margin-bottom: 22px;
+
+}
+
+
+.form-group label {
+
+    color: #334155;
+
+    font-weight: 600;
+
+}
+
+
+.form-group input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 8px;
+
+    border-radius: 14px;
+
+    border: 1px solid #cbd5e1;
+
+    background: white;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: .3s;
+
+}
+
+
+.form-group input:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 10px rgba(37, 99, 235, .25);
+
+}
+
+
+/* Password */
+
+.password-box {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.password-box input {
+
+    flex: 1;
+
+}
+
+
+.toggle-btn {
+
+    width: 90px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #e0e7ff;
+
+    color: #2563eb;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+.toggle-btn:hover {
+
+    background: #c7d2fe;
+
+}
+
+
+/* Login Button */
+
+.login-btn {
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(135deg,
+            #2563eb,
+            #7c3aed);
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.login-btn:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 30px rgba(37, 99, 235, .35);
+
+}
+
+
+/* Error */
+
+.error {
+
+    color: #dc2626;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+
+    display: block;
+
+}
+
+
+/* Animation */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+@media(max-width:480px) {
+
+    .login-card {
+
+        width: 100%;
+
+        padding: 30px 22px;
+
+    }
+
+
+    .login-card h2 {
+
+        font-size: 25px;
+
+    }
+
+}
